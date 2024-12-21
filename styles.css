@@ -1,0 +1,77 @@
+body {
+    font-family: 'Roboto', sans-serif;
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(135deg, #ffffff, #f4f4f9);
+    color: #333;
+}
+header {
+    background: linear-gradient(90deg, #2c3e50, #4ca1af);
+    color: #ecf0f1;
+    padding: 1.5rem 0;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
+header .container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1400px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+header nav ul {
+    list-style: none;
+    display: flex;
+    gap: 2rem;
+}
+header nav ul li a {
+    color: #ecf0f1;
+    text-decoration: none;
+    font-size: 1.1rem;
+    font-weight: bold;
+    transition: color 0.3s;
+}
+header nav ul li a:hover {
+    color: #1abc9c;
+}
+#hero {
+    background-image: url('https://example.com/business-theme-image.jpg');
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    text-align: center;
+    padding: 6rem 2rem;
+}
+#hero .cta {
+    display: inline-block;
+    padding: 1.2rem 2.5rem;
+    background: #1abc9c;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 50px;
+    font-size: 1.2rem;
+    font-weight: bold;
+}
+@media (max-width: 768px) {
+    header .container {
+        flex-direction: column;
+        align-items: center;
+    }
+    header nav ul {
+        flex-direction: column;
+        gap: 1rem;
+    }
+    #hero {
+        padding: 4rem 1rem;
+    }
+    #hero h2 {
+        font-size: 1.8rem;
+    }
+    #hero .cta {
+        padding: 1rem 2rem;
+        font-size: 1rem;
+    }
+    section.container {
+        padding: 1rem;
+    }
+}
